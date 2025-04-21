@@ -8,14 +8,14 @@ enum DayOfWeek {
   Sunday,
 }
 
-const isWeekend = (day: DayOfWeek): string => {
+const dayState = (day: DayOfWeek): string => {
   if (day == DayOfWeek.Saturday || day == DayOfWeek.Sunday) {
     return "Вихідний";
   }
   return "Робочий";
 };
 
-// console.log(isWeekend(DayOfWeek.Friday));
-// console.log(isWeekend(DayOfWeek.Sunday));
+// console.log(dayState(DayOfWeek.Friday));
+// console.log(dayState(DayOfWeek.Sunday));
 
 export {};

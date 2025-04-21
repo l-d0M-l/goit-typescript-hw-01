@@ -6,8 +6,8 @@ type AllType = {
 };
 
 function compare<T extends keyof AllType>(
-  top: Pick<AllType, T>,
-  bottom: Pick<AllType, T>
+  top: Pick<AllType, "name" | "color">,
+  bottom: Pick<AllType, "position" | "weight">
 ): AllType {
   return {
     name: top.name,
